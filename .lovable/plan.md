@@ -14,7 +14,7 @@ Objetivo: aumentar conversão mantendo 100% da identidade visual atual (azul #01
 - Texto do botão principal do hero: **"Solicitar orçamento no WhatsApp"** (nomeia o canal, reduz atrito e diz exatamente o que acontece ao clicar).
 - Botão do topo (header) passa a "Falar com um técnico" para não competir com o CTA principal.
 - O botão do hero continua sendo o elemento visual mais forte: tamanho maior, largura total no mobile e leve destaque de sombra — mesma cor da marca.
-- Microcopy abaixo: "Resposta rápida • Orçamento sem compromisso".
+- Microcopy abaixo: "Resposta rápida • Técnico especializado".
 
 ## 3. Prova social logo abaixo do CTA
 
