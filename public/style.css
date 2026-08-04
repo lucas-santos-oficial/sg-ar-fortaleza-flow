@@ -213,27 +213,28 @@ p{margin:0 0 14px}
   .hero .trust{order:8;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 14px;margin:22px auto 0;max-width:26em;width:100%}
 }
 
-/* ===== Mobile hero redesign (360–430px) — mobile only ===== */
+/* ===== Mobile hero premium refinements (<=700px) ===== */
 @media (max-width:700px){
-  /* header: apenas a logo, altura mínima */
+  /* header: apenas o logo, mais respiro */
   .topbar{box-shadow:0 1px 0 rgba(1,60,146,.06)}
-  .topbar__in{min-height:64px;padding:12px 0 10px}
-  .brand img{height:36px}
+  .topbar__in{min-height:74px;padding:18px 24px 14px;gap:0}
+  .brand img{height:42px}
 
-  /* hero: respiro no topo, ritmo vertical claro */
-  .hero{padding:30px 0 40px}
+  /* hero: mais leveza e ritmo */
+  .hero{padding:40px 0 54px}
   .hero::before{background-size:36px 36px}
   .hero__grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
   .hero__copy{display:contents}
 
+  /* H1 domina a hero */
   .hero h1{
     order:2;
-    font-size:clamp(1.5rem,6.8vw,1.9rem);
-    line-height:1.16;
+    font-size:clamp(1.7rem,7.6vw,2.15rem);
+    line-height:1.18;
     letter-spacing:-.02em;
     font-weight:700;
     max-width:16ch;
-    margin:0 0 16px;
+    margin:0 0 22px;
   }
   .hero h1 br{display:none}
   .hero h1::after{content:""}
@@ -241,29 +242,44 @@ p{margin:0 0 14px}
   .hero .lead{
     order:3;
     font-size:1rem;
-    line-height:1.55;
+    line-height:1.6;
     color:var(--muted);
     max-width:34ch;
-    margin:0 0 24px;
+    margin:0 0 28px;
   }
-  .hero .lead strong{display:block;margin-bottom:4px;font-size:1.05rem;color:var(--ink)}
+  .hero .lead strong{display:block;margin-bottom:6px;font-size:1.06rem;color:var(--ink)}
   .hero .lead br{display:none}
 
   .hero .btn{
     order:4;width:100%;
     padding:16px 20px;font-size:1.02rem;font-weight:600;
     box-shadow:0 14px 26px -16px rgba(2,50,116,.7);
+    margin-bottom:20px;
   }
 
   .hero__media{
-    order:6;margin:14px 0 0;
+    order:6;margin:20px 0 24px;
     border-radius:16px;
     box-shadow:0 20px 40px -26px rgba(1,60,146,.5);
   }
   .hero__media::after{inset:-16px -20px;filter:blur(30px)}
   .hero__media img{aspect-ratio:16/9;object-position:62% 28%;border-radius:16px}
 
-  .trust li{font-size:.82rem}
+  .hero .trust{
+    order:8;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:14px 18px;
+    margin:28px auto 0;
+    max-width:26em;
+    width:100%;
+  }
+  .trust li{font-size:.84rem;line-height:1.35;gap:10px}
+  .trust li svg{width:22px;height:22px;flex-shrink:0}
+
+  /* margens laterais consistentes na hero */
+  .hero .wrap,
+  .topbar__in{padding-left:24px;padding-right:24px}
 
   /* seções: mais escaneáveis */
   .section{padding:52px 0}
