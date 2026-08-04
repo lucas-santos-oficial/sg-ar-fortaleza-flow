@@ -214,9 +214,10 @@ p{margin:0 0 14px}
   .hero h1{order:2;margin-bottom:12px}
   .hero .lead{order:3;margin-bottom:20px;font-size:1.04rem}
   .hero .btn{order:4;width:100%;padding:14px 22px;font-size:1rem}
-  .hero .micro{display:none}
-  .hero .trust{display:none}
-  .hero__media{order:5;margin-top:26px}
+  .hero .micro{order:5;display:block;text-align:center;width:100%;margin:10px 0 0}
+  .hero__proof{order:6;width:100%;max-width:none;margin-top:14px}
+  .hero__media{order:7;margin-top:16px}
+  .hero .trust{order:8;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;margin-top:18px;max-width:none;width:100%}
 }
 
 /* ===== Mobile hero redesign (360–430px) — mobile only ===== */
@@ -262,15 +263,20 @@ p{margin:0 0 14px}
   }
 
   .hero__media{
-    order:5;margin:26px 0 0;
+    order:7;margin:16px 0 0;
     border-radius:16px;
     box-shadow:0 20px 40px -26px rgba(1,60,146,.5);
   }
   .hero__media::after{inset:-16px -20px;filter:blur(30px)}
-  .hero__media img{aspect-ratio:4/3.2;object-position:62% 22%;border-radius:16px}
+  .hero__media img{aspect-ratio:16/9;object-position:62% 28%;border-radius:16px}
+
+  .hero__proof{padding:10px 12px}
+  .hero__proof-t{font-size:.8rem}
+  .hero__proof-q{font-size:.83rem}
+  .trust li{font-size:.78rem}
 
   /* seções: mais escaneáveis */
-  .section{padding:46px 0}
+  .section{padding:52px 0}
   h2{font-size:1.38rem;line-height:1.25}
   .section__sub{font-size:.96rem;margin-bottom:24px}
   .cards--problems li{padding:16px}
