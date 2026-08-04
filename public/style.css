@@ -230,8 +230,8 @@ p{margin:0 0 14px}
   /* hero: respiro no topo, ritmo vertical claro */
   .hero{padding:26px 0 40px}
   .hero::before{background-size:36px 36px}
-  .hero__grid{gap:0}
-  .hero__copy{gap:0}
+  .hero__grid{display:flex;flex-direction:column;gap:0}
+  .hero__copy{display:contents}
 
   .hero h1{
     order:2;
